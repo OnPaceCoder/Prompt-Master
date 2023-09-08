@@ -24,16 +24,16 @@ const Nav = () => {
     }, [])
 
     return (
-        <nav className='flex-between w-full mb-16 mt-5'>
-            <Link href={"/"} className='flex gap-2'>
+        <nav className='flex justify-between w-full mb-16 mt-5'>
+            <Link href={"/"} className='flex gap-2 items-center jc'>
                 <Image src="/assets/images/logo.svg"
                     alt='Propmt-Masater logo'
                     width={30}
                     height={30}
                     className='object-contain'
                 />
+                <p className='logo_text '>Prompt Master</p>
             </Link>
-            <p className='logo_text'>Prompt Master</p>
 
             {/* Desktop Navigation */}
             <div className='sm:flex hidden'>
